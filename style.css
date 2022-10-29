@@ -22,6 +22,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   object-fit: cover;
+  margin-top: -0.063rem;
 }
 
 .video-overlay {
@@ -34,11 +35,11 @@ body {
 }
 
 .app {
-  width: 36.25rem;
-  height: 18.75rem;
+  width: 100%;
+  height: max-content;
   color: #000;
-  margin: 0 auto;
-  padding: 1.563rem 3.125rem;
+  margin: 0 1.25rem;
+  padding: 1.25rem;
   border-radius: 10px;
   z-index: 2;
   display: flex;
@@ -48,11 +49,12 @@ body {
 
 .app__input-container {
   position: relative;
-  top: 1.25rem;
+  top: unset;
+  width: 100%;
 }
 
 .app__title {
-  font-size: 2.188rem;
+  font-size: 1.25rem;
   text-align: center;
   margin-top: 0;
   margin-bottom: 0.625rem;
@@ -64,7 +66,7 @@ body {
 }
 
 .app__form {
-  width: 30rem;
+  width: unset;
   display: flex;
   flex-flow: column;
 }
@@ -113,7 +115,7 @@ body {
 
 .app__list--item {
   display: inline-block;
-  font-size: 1.875rem;
+  font-size: 0.938rem;
   list-style-type: none;
   padding: 0.625rem;
   text-transform: uppercase;
@@ -121,7 +123,7 @@ body {
 
 .app__list--time {
   display: block;
-  font-size: 5rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -130,38 +132,37 @@ body {
   top: 3.75rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .video-background {
-    margin-top: -0.063rem;
+    margin-top: 0;
   }
 
   .app {
     min-width: unset;
-    width: 100%;
-    height: max-content;
-    padding: 1.25rem;
-    margin: 0 1.25rem;
+    width: 36.25rem;
+    height: 18.75rem;
+    padding: 1.563rem 3.125rem;
+    margin: 0 auto;
   }
 
   .app__input-container {
-    top: unset;
-    width: 100%;
+    top: 1.25rem;
   }
 
   .app__title {
-    font-size: 1.25rem;
+    font-size: 2.188rem;
   }
 
   .app__form {
-    width: unset;
+    width: 30rem;
   }
 
   .app__list--item {
-    font-size: 0.938rem;
+    font-size: 1.875rem;
   }
 
   .app__list--time {
-    font-size: 2.5rem;
+    font-size: 5rem;
   }
 }
 
