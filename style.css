@@ -34,12 +34,12 @@ body {
 }
 
 .app {
-  width: 580px;
-  height: 300px;
+  width: 36.25rem;
+  height: 18.75rem;
   color: #000;
   margin: 0 auto;
-  padding: 25px 50px;
-  border-radius: 5px;
+  padding: 1.563rem 3.125rem;
+  border-radius: 10px;
   z-index: 2;
   display: flex;
   justify-content: center;
@@ -48,14 +48,14 @@ body {
 
 .app__input-container {
   position: relative;
-  top: 20px;
+  top: 1.25rem;
 }
 
 .app__title {
-  font-size: 35px;
+  font-size: 2.188rem;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   text-transform: capitalize;
 }
 
@@ -64,31 +64,31 @@ body {
 }
 
 .app__form {
-  width: 480px;
+  width: 30rem;
+  display: flex;
+  flex-flow: column;
 }
 
 .app__label {
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 0.625rem;
   text-transform: capitalize;
 }
 
 .app__input {
   font-family: 'Nunito', sans-serif;
-  width: 95%;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
+  margin-bottom: 0.625rem;
+  padding: 0.625rem;
+  border: 0.063rem solid #ccc;
   border-radius: 20px;
   background: #fff;
-  outline: none;
 }
 
 .app__button {
   width: 100%;
-  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   border-radius: 20px;
-  margin-top: 15px;
+  margin-top: 0.938rem;
   border: none;
   text-transform: uppercase;
   background-color: #1589ff;
@@ -103,68 +103,65 @@ body {
 }
 
 .app__button:focus-visible {
-  outline-offset: 3px;
-  outline: 2px solid #0af;
+  outline-offset: 0.188rem;
+  outline: 0.125rem solid #0af;
 }
 
 .app__list {
-  margin-left: -45px;
+  margin-left: -2.813rem;
 }
 
 .app__list--item {
   display: inline-block;
-  font-size: 30px;
+  font-size: 1.875rem;
   list-style-type: none;
-  padding: 10px;
+  padding: 0.625rem;
   text-transform: uppercase;
 }
 
 .app__list--time {
   display: block;
-  font-size: 80px;
+  font-size: 5rem;
   text-align: center;
 }
 
 .app__complete {
   position: relative;
-  top: 60px;
+  top: 3.75rem;
 }
 
 @media screen and (max-width: 767px) {
   .video-background {
-    margin-top: -1px;
+    margin-top: -0.063rem;
   }
 
   .app {
     min-width: unset;
     width: 100%;
     height: max-content;
-    padding: 20px;
-    margin: 0 20px;
+    padding: 1.25rem;
+    margin: 0 1.25rem;
   }
 
   .app__input-container {
     top: unset;
+    width: 100%;
   }
 
   .app__title {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .app__form {
     width: unset;
   }
 
-  .app__input {
-    width: 93%;
-  }
-
   .app__list--item {
-    font-size: 15px;
+    font-size: 0.938rem;
   }
 
   .app__list--time {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
