@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Countdown Timer</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Countdown Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <video class="video-background" loop muted autoplay>
+  <video class="video-background" id="video-background" loop muted autoplay>
     <source src="time.mp4"></source>
   </video>
   <div class="video-overlay"></div>
+
   <div class="app">
     <div class="app__input-container" id="inputContainer">
       <h1 class="app__title">custom countdown creator!</h1>
@@ -19,7 +20,7 @@
           for="title"
           class="app__label"
         >
-          title
+          Title
         </label>
         <input
           type="text"
@@ -27,54 +28,50 @@
           class="app__input"
           placeholder="What are you counting down to?"
         />
+
         <label
           for="datePicker"
           class="app__label"
         >
-          select a date
+          Select a Date
         </label>
         <input
           type="date"
           id="datePicker"
           class="app__input"
         />
+
         <button type="submit" class="app__button">
-          submit
+          Submit
         </button>
       </form>
     </div>
+
     <div class="app__countdown" id="countdown" hidden>
-      <h2 class="app__title" id="countdownTitle">countdown title</h2>
+      <h2 class="app__title" id="countdownTitle"></h2>
       <ul class="app__list">
         <li class="app__list--item">
-          <span class="app__list--time">3</span> days
+          <span class="app__list--time"></span> days
         </li>
         <li class="app__list--item">
-          <span class="app__list--time">6</span> hours
+          <span class="app__list--time"></span> hours
         </li>
         <li class="app__list--item">
-          <span class="app__list--time">45</span> minutes
+          <span class="app__list--time"></span> minutes
         </li>
         <li class="app__list--item">
-          <span class="app__list--time">52</span> seconds
+          <span class="app__list--time"></span> seconds
         </li>
       </ul>
-      <button
-        class="app__button"
-        id="countdownButton"
-      >
+      <button id="countdownButton" class="app__button">
         reset
       </button>
     </div>
+
     <div class="app__complete" id="complete" hidden>
       <h2 class="app__title app__title--complete" id="completeTitle">countdown complete!</h2>
-      <span class="app__title" id="completeInfo">
-        countdown finished on 29-10-2022
-      </span>
-      <button
-        class="app__button"
-        id="completeButton"
-      >
+      <h2 class="app__title" id="completeInfo"></h2>
+      <button id="completeButton" class="app__button">
         new countdown
       </button>
     </div>
